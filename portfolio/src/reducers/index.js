@@ -14,15 +14,32 @@ const initalState = {
         selectedProject :0
     },
     skills: {},
-    navDisplay: false,
+    navDisplay: 'closed',
     contactDisplay: false,
 
 }
 
 export const reducers = (state=initalState, action) => {
+    console.log('hi')
     switch(action.type){
-        default :
-        return state;
+        
+        case 'TOGGLE_CLOSE': {
+            console.log('hi')
+            return {
+                ...state, navDisplay: 'close'
+            }
+        }
+        case 'TOGGLE_OPEN': {
+            console.log('Wwhat')
+            return {
+                ...state, navDisplay: 'open'
+            }
+        }
+     
+        default :{
+            return state;
+        }
+     
     }
      
     

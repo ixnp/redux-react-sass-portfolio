@@ -1,0 +1,24 @@
+.App{
+    display:grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.header-container{
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  
+  
+  &-img{
+    grid-column: 1/-1;
+    grid-row: 1;
+  }
+  &-text{
+      display: grid;
+      grid-column: 3/-1;
+      grid-row:1;
+      z-index: 1;
+      justify-content: end;
+      align-content: center;
+  }
+}
