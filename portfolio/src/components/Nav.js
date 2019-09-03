@@ -5,7 +5,7 @@ import {toggleNav} from '../actions'
 const Nav = (props) => {
     return (
       <div className="nav">
-        <div id="nav-icon1" onClick={()=>{toggleNav(props.navDisplay)}} className={props.navDisplay}>
+        <div id="nav-icon1" onClick={()=>{props.toggleNav(props.navDisplay)}} className={props.navDisplay}>
         <span></span>
         <span></span>
        <span></span>

@@ -1,3 +1,4 @@
+import {toggleNav} from '../actions'
 const initalState = {
     projectsItems: {
         project: {
@@ -21,18 +22,20 @@ const initalState = {
 
 export const reducers = (state=initalState, action) => {
     console.log('hi')
-    switch(action.type){
+    console.log(action.type)
+    switch(action.type){  
         
         case 'TOGGLE_CLOSE': {
             console.log('hi')
+    
             return {
-                ...state, navDisplay: 'close'
+                ...state, navDisplay: 'closed'
             }
         }
         case 'TOGGLE_OPEN': {
             console.log('Wwhat')
             return {
-                ...state, navDisplay: 'open'
+                ...state, navDisplay: action.payload
             }
         }
      
