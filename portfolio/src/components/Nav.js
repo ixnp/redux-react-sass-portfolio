@@ -10,14 +10,11 @@ const Nav = (props) => {
         <span></span>
        <span></span>
       </div>
+
       </div>
     );
   }
-  //the nav component should be toggling 
-  //the currentClass of the nav is held in state
-  //on click the action toggleNav
-  //should dispatch to a reducer
-  //it doesn't seem to be doing that
+
 const mapStateToProps = (state) => {
   return{
     navDisplay: state.navDisplay

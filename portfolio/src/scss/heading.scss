@@ -1,17 +1,20 @@
 img{
     width: 100%;
+    overflow:hidden;
 }
 
 .header-container{
-
+  font-family: $font-headings; 
+  min-width: 950px;
     &-text{
         color: $light-primary;
-        margin: 35% 10px 10px 10px;
-
+        margin: 35% 10px 0px 10px;
+        overflow:hidden;
+      
        h1, h2{
-            margin: 10px 0px 10px 0;
+        text-transform: uppercase;
        }
-       font-size: 2.8rem;
+       font-size: 250%;
    
     }
 
@@ -20,13 +23,30 @@ img{
     }
    
 }
+.menu{
+  grid-row: 1;
+  grid-column: 1/-1;
+  justify-self:center;
+  align-self: center;
 
+display:none;
+  &.open{
+    display: inline;
+    color: $light-primary;
+  
+
+  }
+  li{
+    list-style-type:none;
+  }
+}
 .nav{
   grid-row: 1;
   grid-column: 1;
   position: fixed;
 }
 
+// hamburger menu icon
 #nav-icon1{
 
     width: 60px;

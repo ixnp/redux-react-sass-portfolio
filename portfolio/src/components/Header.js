@@ -1,5 +1,6 @@
 import React from 'react';
 import Nav from './Nav';
+import Menu from './Menu'
 import '../scss/main.scss';
 
 import bannerImage from '../assets/headingimg.jpeg'
@@ -15,6 +16,7 @@ const Header = () => {
           </div>
       <img className="header-container-img overlay"src={bannerImage}></img>
       <Nav></Nav>
+      <Menu></Menu>
       </div>
     );
   }

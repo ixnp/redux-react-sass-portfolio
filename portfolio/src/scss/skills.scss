@@ -1,0 +1,61 @@
+.skills{
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: repeat(26,1fr); 
+    li{
+        list-style-type: none;
+       
+        color:$light-primary;
+        align-self:center;
+        padding:10px 0 10px 0;
+        
+        &:nth-child(2){
+           @include graph(2,12);
+        }
+        &:nth-child(3){
+            @include graph(4,12);
+        }
+        &:nth-child(4){
+            @include graph(6,11);
+        }
+        &:nth-child(5){
+            @include graph(8,13);
+        }
+        &:nth-child(6){
+            @include graph(10,10);
+
+        }
+        &:nth-child(7){
+            @include graph(12,8);
+
+        }
+        &:nth-child(8){
+            @include graph(14,7);
+
+        }
+
+        &:nth-child(9){
+            @include graph(16,10);
+
+        }
+        &:nth-child(10){
+            @include graph(18,10);
+
+        }
+        &:nth-child(11){
+            @include graph(20,12);
+
+        }
+        &:nth-child(12){
+            @include graph(22,11);
+
+        }
+        &:nth-child(13){
+            @include graph(24,11);
+
+        }
+
+    }
+  
+ 
+}
