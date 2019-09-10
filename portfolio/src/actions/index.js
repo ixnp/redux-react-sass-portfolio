@@ -1,5 +1,4 @@
 export const toggleNav = (currentClass) => {
-    console.log(currentClass)
     if(currentClass === 'open'){
         return{
             type: 'TOGGLE_CLOSE',
@@ -11,6 +10,13 @@ export const toggleNav = (currentClass) => {
             payload: 'open'
         
         }
+    }
+}
+
+export const formAction = (formState) => {
+    return{
+        type: 'FORM_VALUE',
+        payload: formState
     }
 }
 

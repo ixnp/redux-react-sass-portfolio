@@ -17,25 +17,28 @@ const initalState = {
     skills: {},
     navDisplay: 'closed',
     contactDisplay: false,
-
+    form: {},
 }
 
 export const reducers = (state=initalState, action) => {
-    console.log('hi')
-    console.log(action.type)
     switch(action.type){  
         
         case 'TOGGLE_CLOSE': {
-            console.log('hi')
+            
     
             return {
                 ...state, navDisplay: 'closed'
             }
         }
         case 'TOGGLE_OPEN': {
-            console.log('Wwhat')
+            
             return {
                 ...state, navDisplay: action.payload
+            }
+        }
+        case 'FORM_VALUE' : {
+            return {
+                ...state, form: action.payload
             }
         }
      
