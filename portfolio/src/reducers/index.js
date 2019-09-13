@@ -18,6 +18,7 @@ const initalState = {
     navDisplay: 'closed',
     contactDisplay: false,
     form: {},
+    graphType:'bar',
 }
 
 export const reducers = (state=initalState, action) => {

@@ -1,5 +1,8 @@
 import React from 'react';
 import '../scss/main.scss';
+//need to build out graph types
+//pass props of graphs bar, pie line
+//build buttons that switches graph type
 
 const Skills = () => {
     return (
