@@ -1,25 +1,26 @@
-img{
-    width: 100%;
-    overflow:hidden;
-}
 
 .header-container{
+  
   font-family: $font-headings; 
-  min-width: 950px;
+  min-width: 1500px;
+  overflow:hidden;
     &-text{
         color: $light-primary;
         margin: 35% 10px 0px 10px;
-        overflow:hidden;
+        font-size: 250%;
+        z-index:0;
       
        h1, h2{
         text-transform: uppercase;
        }
-       font-size: 250%;
+       
    
     }
 
     img{
-        width: 100%;
+      width: 100%;
+      overflow:hidden;
+      z-index: -3;
     }
    
 }
@@ -32,14 +33,36 @@ img{
 
 display:none;
   &.open{
+    top: 20%;
+    left: 35%;
+   position: fixed;
     display: inline;
     color: $light-primary;
-  
+    font-size: 4rem;
+   
 
   }
+
+  
   li{
     list-style-type:none;
+    padding:1vh 10vw 1vh 10vw;
   }
+  li:hover{
+   color:$light-mid;
+  }
+  
+}
+.menu:before{
+  content:"";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: .6;
+  z-index: -1;
+  
+  
 }
 .nav{
   grid-row: 1;
