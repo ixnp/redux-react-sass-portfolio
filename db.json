@@ -1,0 +1,17 @@
+{
+    "skills": [
+      { "skill": "React", "proficiency": 85 },
+      { "skill": "Redux", "proficiency": 80 },
+      { "skill": "Node.js", "proficiency": 75 },
+      { "skill": "Express", "proficiency": 75 },
+      { "skill": "Java Script", "proficiency": 90 },
+      { "skill": "Ruby", "proficiency": 65 },
+      { "skill": "Ruby on Rails", "proficiency": 69},
+      { "skill": "PostgreSQL", "proficiency": 75 },
+      { "skill": "MongoDB", "proficiency": 65 },
+      { "skill": "HTML/SCSS", "proficiency": 90 },
+      { "skill": "UI Design", "proficiency": 80 },
+      { "skill": "Photoshop", "proficiency": 60 }
+    ]
+    
+  }
