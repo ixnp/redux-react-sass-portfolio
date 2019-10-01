@@ -9,3 +9,9 @@
 
             }
         }
+@mixin form($marg,$padding){
+    color:$shadow-mid;
+    text-transform: uppercase;
+    margin: $marg;
+    padding:$padding;
+}

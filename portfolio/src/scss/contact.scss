@@ -1,0 +1,23 @@
+.contact{
+    
+    form{
+        display:flex;
+        flex-direction: column;
+        padding: 2%;
+        
+        input{
+            @include form(2%,3%)
+        }
+        textarea{
+            @include form(2%,3%);
+            height: 18vh;
+            border-style:none;
+            
+        }
+        button{
+            @include form(2%,0);
+            height: 4vh;
+        }
+    }
+    
+}

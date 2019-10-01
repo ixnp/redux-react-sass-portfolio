@@ -8,7 +8,10 @@ class Contact extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      value:''
+      name:'name',
+      email:'email',
+      subject:'subject',
+      message:'message'
     }
   }
   handelChange = (event) => {
@@ -24,10 +27,10 @@ class Contact extends React.Component {
     return (
       <div className="contact">
         <form onSubmit={this.handelSubmit}>
-          <input type="text" name="name" onChange={this.handelChange}></input>
-          <input type="text" name="email" onChange={this.handelChange}></input>
-          <input type="text" name="subject" onChange={this.handelChange}></input>
-          <textarea name="message" onChange={this.handelChange}></textarea>
+          <input value={this.state.name} type="text" name="name" onChange={this.handelChange}></input>
+          <input value={this.state.email} type="text" name="email" onChange={this.handelChange}></input>
+          <input value={this.state.subject} type="text" name="subject" onChange={this.handelChange}></input>
+          <textarea value={this.state.message}name="message" onChange={this.handelChange}></textarea>
           <button type="submit" >Submit</button>
         </form>
       </div>
