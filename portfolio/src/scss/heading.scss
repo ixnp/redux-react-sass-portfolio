@@ -47,12 +47,19 @@ display:none;
   li{
     list-style-type:none;
     padding:1vh 10vw 1vh 10vw;
+    a{
+      color: $light-primary;
+      text-decoration: none;
+    }
   }
   li:hover{
    color:$light-mid;
    text-shadow: 1px 2px 1px $shadow-mid;
+   a:hover{
+    color:$light-mid;
+   }
   }
-  
+
 }
 .menu:before{
   content:"";

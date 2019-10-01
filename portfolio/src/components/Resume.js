@@ -11,7 +11,10 @@ const Resume = () => {
         <div className="experince"></div>
         <div className="skills"></div>
         <div className="school"></div>
-        <div className="downloadPDF"></div>
+        <div className="downloadPDF">
+        <div id={'resume-pdf'}>Resume<a
+            href={PDF}></a> </div>
+        </div>
       </div>
     );
   }
