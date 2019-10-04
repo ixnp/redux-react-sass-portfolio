@@ -1,11 +1,11 @@
  @mixin graph($row,$col) {
-            grid-column: 3 / span $col;
+            grid-column: 2 / span $col;
             grid-row:$row;
             background:$light-mid;
             & span{
-                grid-column: 3/10;
+              
                 background:$shadow-mid;
-                padding: 10px 20px 10px 5px;
+                padding: 10px 60px 10px 5px;
 
             }
         }

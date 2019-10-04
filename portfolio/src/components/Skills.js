@@ -7,6 +7,8 @@ import '../scss/main.scss';
 const Skills = () => {
     return (
       <div className="skills">
+  
+        <div className="skills-graph">
         <div className="graph"><span></span></div>
         <li className="front-end"><span>React</span></li>
         <li className="front-end"><span>Redux</span></li>
@@ -20,6 +22,10 @@ const Skills = () => {
         <li className="front-end"><span>HTML/SCSS</span></li>
         <li className="front-end"><span>UI Design</span></li>
         <li className="front-end"><span>Photoshop</span></li>
+        </div>
+        <div className="skills-info">
+          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis interdum et felis sit amet accumsan. Nulla non mattis quam, ac varius eros. Nullam eu enim tincidunt, efficitur nulla sit amet, facilisis risus. Nunc fermentum massa non massa ornare ullamcorper. Aliquam id venenatis nulla, et rhoncus sem. Pellentesque quis nibh tincidunt turpis commodo sollicitudin. Quisque convallis, ex ut cursus condimentum, leo nisi molestie lacus, nec accumsan nunc arcu id ante. Nulla leo nunc, tempus nec nisi quis, molestie consequat enim. Nulla rutrum odio ac felis cursus imperdiet. Cras a hendrerit sapien. Phasellus bibendum imperdiet augue in lobortis. Maecenas massa sapien, fringilla a lectus sed, porta fermentum diam. Vivamus gravida eleifend massa, sit amet auctor leo dignissim eget. In eu ipsum dictum, tristique tortor a, iaculis mauris. Donec egestas, arcu in tristique euismod, velit urna vehicula nunc, ut porta augue nisi ac odio.</p>
+        </div>
       </div>
     );
   }

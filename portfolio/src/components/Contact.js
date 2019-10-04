@@ -26,13 +26,16 @@ class Contact extends React.Component {
     render() {
     return (
       <div className="contact">
-        <form onSubmit={this.handelSubmit}>
-          <input value={this.state.name} type="text" name="name" onChange={this.handelChange}></input>
-          <input value={this.state.email} type="text" name="email" onChange={this.handelChange}></input>
-          <input value={this.state.subject} type="text" name="subject" onChange={this.handelChange}></input>
-          <textarea value={this.state.message}name="message" onChange={this.handelChange}></textarea>
-          <button type="submit" >Submit</button>
-        </form>
+        <div className="contact-header">Contact me here</div>
+        <div className="contact-body">
+          <form onSubmit={this.handelSubmit}>
+            <input value={this.state.name} type="text" name="name" onChange={this.handelChange}></input>
+            <input value={this.state.email} type="text" name="email" onChange={this.handelChange}></input>
+            <input value={this.state.subject} type="text" name="subject" onChange={this.handelChange}></input>
+            <textarea value={this.state.message}name="message" onChange={this.handelChange}></textarea>
+            <button type="submit" >Submit</button>
+          </form>
+        </div>
       </div>
     );
     }
