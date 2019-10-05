@@ -15,7 +15,8 @@ const projectArr = [
         "https://image.shutterstock.com/image-vector/default-ui-image-placeholder-wireframes-600w-1037719192.jpg",
       med: "",
       small: ""
-    }
+    },
+    selected: true
   },
     {
     name: "Digital Pheromones",
@@ -29,13 +30,30 @@ const projectArr = [
         "https://image.shutterstock.com/image-vector/default-ui-image-placeholder-wireframes-600w-1037719192.jpg",
       med: "",
       small: ""
-    }
+    },
+    selected: false
+  },
+      {
+    name: "test",
+    technologies: "Jquery SCSS",
+    role: 'UX/UI Designer and Developer',
+    url: '',
+    description:
+      "Web portfolio built for to Client specifications. Dynamic Mobile and Web portfolio built for the VR technology Company Digital Peronmones.",
+    img: {
+      big:
+        "https://image.shutterstock.com/image-vector/default-ui-image-placeholder-wireframes-600w-1037719192.jpg",
+      med: "",
+      small: ""
+    },
+    selected: false
   }
 ];
 const initalState = {
     projectsItems: {
         projects:projectArr,
-        selectedProject :0
+        index:0
+         
     },
     skills: {},
     navDisplay: 'closed',
@@ -65,6 +83,23 @@ export const reducers = (state=initalState, action) => {
             return {
                 ...state, form: action.payload
             }
+        }
+        case 'PROJECT_SELECTION':{
+        let temp = state.projectsItems;
+        console.log(action.payload, temp.projects.length)
+        temp.projects[action.payload].selected = false;
+        if (action.payload >= temp.projects.length - 1) {
+          temp.projects[0].selected = true;
+          temp.index = 0;
+        } else {
+          temp.projects[action.payload + 1].selected = true;
+          temp.index = temp.index + 1;
+        }
+       
+        
+          return {
+           ...state, projectsItems: temp
+          }
         }
      
         default :{

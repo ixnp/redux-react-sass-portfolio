@@ -20,3 +20,9 @@ export const formAction = (formState) => {
     }
 }
 
+export const projectAction = (projects) => {
+  return{
+    type: 'PROJECT_SELECTION',
+    payload: projects 
+  }
+}

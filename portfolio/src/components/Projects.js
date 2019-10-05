@@ -1,24 +1,29 @@
 import React from 'react';
 import { connect } from 'react-redux'
+import { projectAction } from '../actions'
 import ProjectCard from './ProjectCard'
 import '../scss/main.scss';
 
-const Project = ({projectsItems}) => {
-  console.log(projectsItems.projects);
-    return (
+const Project = (props) => {
   
+    return (
       <div className="project">
-        {projectsItems.projects.map(item => {
-          
-         return <ProjectCard key={Math.random(100)} project={item}></ProjectCard>
-     })}
-    
+        <div className="project-items">
+          <ProjectCard/>
+
+        <button className="btn btn-forward"
+            onClick={() => props.projectAction(props.projectsItems.index)}
+        >Next</button>
+        </div>
       </div>
+
     );
   }
 
+
 const mapStateToProps = (state) => {
+
   return { projectsItems: state.projectsItems };
 }
 
-export default connect(mapStateToProps)(Project)
+export default connect(mapStateToProps,{ projectAction})(Project)
