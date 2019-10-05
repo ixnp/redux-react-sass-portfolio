@@ -4,7 +4,7 @@ import Menu from './Menu'
 import '../scss/main.scss';
 
 import bannerImage from '../assets/headingimg.jpeg'
-import avatar from '../assets/avatar.jpeg'
+
 const Header = () => {
     return (
       <div className="header-container">

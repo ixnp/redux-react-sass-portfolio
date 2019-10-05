@@ -2,13 +2,14 @@
     display:grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: 1fr 1fr 1fr 1fr 10px;
+    width:100%;
 }
 
 .header-container{
     grid-column: 1/-1;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-  
+ 
   
   &-img{
     grid-column: 1/-1;
@@ -33,6 +34,7 @@
   grid-row: 3;
   grid-column: 1/-1;
   background: #babdcf;
+  
 }
 .contact{
   grid-row: 4;

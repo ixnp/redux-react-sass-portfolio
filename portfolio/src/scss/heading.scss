@@ -2,12 +2,13 @@
 .header-container{
   
   font-family: $font-headings; 
-  min-width: 1500px;
+  
   overflow:hidden;
     &-text{
+
         color: $light-primary;
-        margin: 35% 10px 0px 10px;
-        font-size: 250%;
+        grid-column: 3/4;
+        font-size: 100%;
         z-index:0;
       
        h1, h2{
