@@ -3,9 +3,8 @@
             grid-row:$row;
             background:$light-mid;
             & span{
-              
-                background:$shadow-mid;
-                padding: 10px 60px 10px 5px;
+              position: absolute;
+               z-index: 5;
 
             }
         }
