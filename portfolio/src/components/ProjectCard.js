@@ -1,26 +1,30 @@
 import React from 'react';
 import { connect } from 'react-redux'
+import { projectAction } from "../actions";
 import '../scss/main.scss';
 
-const ProjectCard = ({project}) => {
-  console.log(project)
+const ProjectCard = (props) => {
     return (
-      <div className="projectcard">
+      <div className="project">
         <div className="card-sectionOne">
-          <h3 className="card-sectionOne-title">{project.name}</h3>
-          <h4 className="card-sectionOne-subheader">{project.role}</h4>
-          <h4 className="card-sectionOne-subheader">{project.technologies}</h4>
-          <p className="card-sectionOne-paragraph">{project.description}</p>
+          <h3 className="card-sectionOne-title">{props.project.name}</h3>
+          <h4 className="card-sectionOne-subheader">{props.project.role}</h4>
+          <h4 className="card-sectionOne-subheader">{props.project.technologies}</h4>
+          <p className="card-sectionOne-paragraph">{props.project.description}</p>
+          <button className="btn btn-forward"
+            onClick={() => props.projectAction(props.index)}
+          >Next</button>
         </div>
         <div className="card-sectionTwo">
-          <img src={project.img.big}></img>
+          <img src={props.project.img.big}></img>
         </div>
       </div>
     );
   }
 
   const mapStateToProps = (state) => {
-    return { project: state.projectsItems.projects[state.projectsItems.index] };
+    return { project: state.projectsItems.projects[state.projectsItems.index],
+              index:state.projectsItems.index };
   }
 
-export default connect(mapStateToProps)(ProjectCard);
+export default connect(mapStateToProps, { projectAction })(ProjectCard);

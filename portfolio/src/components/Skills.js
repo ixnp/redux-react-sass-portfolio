@@ -9,9 +9,10 @@ import avatar from "../assets/avatar.jpeg";
 const Skills = () => {
     return (
       <div className="skills">
-  
+        
         <div className="skills-graph">
-        <div className="graph"><span></span></div>
+          <h3>Stacks &amp; Technology</h3>
+          <div className="graph"><span></span></div>
         <li className="front-end"><span>React</span></li>
         <li className="front-end"><span>Redux</span></li>
         <li className="back-end"><span>Node.js</span></li>

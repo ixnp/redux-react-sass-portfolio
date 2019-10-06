@@ -6,7 +6,7 @@
   overflow:hidden;
     &-text{
 
-        color: $light-primary;
+        color: $light;
         grid-column: 3/4;
         font-size: 100%;
         z-index:0;
@@ -14,6 +14,7 @@
        h1, h2{
         text-transform: uppercase;
        }
+       
        
    
     }
@@ -39,6 +40,7 @@
   grid-column: 1/-1;
   justify-self:center;
   align-self: center;
+  
 
 display:none;
   &.open{
@@ -46,7 +48,7 @@ display:none;
     left: 35%;
    position: fixed;
     display: inline;
-    color: $light-primary;
+    color: $light;
     font-size: 4rem;
    
 
@@ -58,17 +60,17 @@ display:none;
     padding:1vh 10vw 1vh 10vw;
     transition: all .2s ease-in-out;
     a{
-      color: $light-primary;
+      color: $light;
       text-decoration: none;
     }
   }
   
   li:hover{
-   color:$light-mid;
-   text-shadow: 1px 2px 1px $shadow-mid;
+   color:$light;
+   text-shadow: 1px 2px 1px $mid;
    transform: scale(1.1);
    a:hover{
-    color:$light-mid;
+    color:$light;
    }
   }
 
@@ -112,7 +114,7 @@ display:none;
     position: absolute;
     height: 10px;
     width: 100%;
-    background:  $light-primary;
+    background:  $highlight;
     border-radius: 9px;
     opacity: 1;
     left: 0;

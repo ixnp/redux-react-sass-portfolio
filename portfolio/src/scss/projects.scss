@@ -1,3 +1,54 @@
-.projectcard{
+.project{
+display: flex;
+font-family: $font-headings;
+  h3{
+    font-size: 4vh;
+    font-weight: bolder;
+    color:$shadow;
+    padding:0;
+    line-height: 4vh;
+  }
+  h4{
+    font-size: 2.5vh;
+    font-style:italic;
+    color:$shadow;
+    padding:0;
+    line-height: 4vh;
+    &:nth-child(3){
+      color: $mid;
+    }
 
+  }
+  p{
+    margin-top:30px;
+     line-height: 3vh; 
+
+  }
+  .btn{
+    margin: 30px 0 0 0;
+    text-align: start;
+    height:4vh;
+    width: 8vh;
+    background: none;
+    border-style: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+    transition: all .2s ease-in-out;
+    
+  }
+  .btn:hover{
+   text-shadow: 1px 2px 1px $mid;
+   transform: scale(1.1);
+
+  }
+  .card-sectionOne{
+    margin:10px 60px 0px 60px;
+
+  }
+
+  img{
+    margin: 25px 25px 0 30px;
+    border-style: solid;
+  }
 }
+

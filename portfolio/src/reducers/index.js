@@ -6,7 +6,7 @@ const projectArr = [
    {
     name: "Plant Parent",
     technologies: "Node.js React Redux SCSS Ruby on Rails",
-    role: " instructor and project lead",
+    role: "Instructor and Project Lead",
     url:'',
     description:
       "An example project built for a weekend workshop.The purpose of this app is to demonstrate the basics of a full stack react application to Students.Built over a 3 day workshop, the project includes a front end built on Node.js using React and Redux, styled with SCSS and features a Rails backend.",

@@ -24,6 +24,7 @@ display: grid;
         button{
             @include form(2%,0);
             height: 10vh;
+            background: $highlight;
         }
     }
     

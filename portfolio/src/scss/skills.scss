@@ -4,10 +4,12 @@
     &-info{
         padding:20px 0 0 0;
         width: 50%;
-        
+        color:$mid;
+       font-family: $font-text;
+      
         .circle{ 
-        
-          margin: auto;
+        padding-top: 30px;
+        margin: auto;
         width: 20vw;
         min-width: 300px;
         max-width: 430px;
@@ -25,31 +27,43 @@
           height: 145%;
           width: auto;
         }
+        h3{
+          padding:45px 60px 0 60px;
+          color:$shadow;
+        }
         p{
-          padding:20px;
-          text-align: justify;
+         padding:10px 60px 0 60px;
         }
     }
     &-graph{
-  
+    font-family: $font-text;
+    
     width: 800px;
     height: 800px;
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: repeat(26,1fr); 
-    
+    h3{
+
+      grid-column: 2/-1;
+      grid-row: 2;
+      color:$shadow;
+      font-size: 4vh;
+    }
     li{
+     
         list-style-type: none;
-       
-        color:$light-primary;
+        color:$highlight;
         align-self:center;
         animation-name: moving;
         animation-duration: 3s;
         height:100%;
+        
           &:before{
+
             	content: '';
               position: absolute;
-              background-color: $shadow-mid;
+              background-color: $mid;
               height: 30px;
               width:13%;
               min-width: 85px;
@@ -111,6 +125,7 @@
   
  
 }
+
 
 @keyframes moving {
   0%{width: 0%}
