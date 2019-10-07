@@ -27,6 +27,7 @@
           height: 145%;
           width: auto;
         }
+       
         h3{
           padding:45px 60px 0 60px;
           color:$shadow;
@@ -35,6 +36,7 @@
          padding:10px 60px 0 60px;
         }
     }
+
     &-graph{
     font-family: $font-text;
     
@@ -43,7 +45,7 @@
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: repeat(26,1fr); 
-    h3{
+    .heading{
 
       grid-column: 2/-1;
       grid-row: 2;
@@ -55,7 +57,7 @@
         list-style-type: none;
         color:$highlight;
         align-self:center;
-        animation-name: moving;
+        
         animation-duration: 3s;
         height:100%;
         
@@ -122,11 +124,77 @@
     }
     }
     
+    @media only screen and (max-width: 1200px){
+        &-inner{
+            display: flex;
+            flex-direction: column-reverse; 
+            
+        }
+       
+        &-info{
+            display: grid;
+            grid-template-columns: auto auto;
+            padding:20px 0 0 0;
+            color:$mid;
+           font-family: $font-text;
+           width: 85%;
+           overflow: scroll;
+            .circle{ 
+            padding-top: 30px;
+            margin: 80px 0 0 20px;
+        
+            width: 20vw;
+            min-width: 200px;
+            max-width: 330px;
+            height: 24vh;
+            min-height: 200px;
+            max-height:330px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 50%;
+            }
+            img {
+             
+              display: inline;
+              margin:-15% 0% 0% -6%;
+              height: 145%;
+              width: auto;
+            }
+         
+          
+            h3{
+              padding:45px 20px 0 10%;
+              color:$shadow;
+            }
+            p{
+                
+                width: auto;
+               font-size: 2vw;
+             padding:10px 25px 0 10%;
+             
+            }
+        }  
+        &-graph{
+            width: 600px;
+        } 
+        @media only screen and (max-width: 900px){
+            &-info{
+            display: flex;
+            flex-direction: column;
+            .circle{ 
+                margin: auto;
+            }
+            
+            }
+        }  
+    }
   
  
 }
 
-
+.moving{
+    animation-name: moving;
+}
 @keyframes moving {
   0%{width: 0%}
   100%{width: 100%;}

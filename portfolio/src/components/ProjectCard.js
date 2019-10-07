@@ -5,7 +5,10 @@ import '../scss/main.scss';
 
 const ProjectCard = (props) => {
     return (
+
       <div className="project">
+        <h2>PROJECTS</h2> 
+        <div className="card-body">
         <div className="card-sectionOne">
           <h3 className="card-sectionOne-title">{props.project.name}</h3>
           <h4 className="card-sectionOne-subheader">{props.project.role}</h4>
@@ -17,6 +20,7 @@ const ProjectCard = (props) => {
         </div>
         <div className="card-sectionTwo">
           <img src={props.project.img.big}></img>
+        </div>
         </div>
       </div>
     );

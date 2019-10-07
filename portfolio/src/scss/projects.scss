@@ -1,6 +1,10 @@
 .project{
-display: flex;
+  margin: 100px 0 100px 0; 
 font-family: $font-headings;
+h2{
+ 
+  text-align: center;
+}
   h3{
     font-size: 4vh;
     font-weight: bolder;
@@ -45,7 +49,10 @@ font-family: $font-headings;
     margin:10px 60px 0px 60px;
 
   }
-
+  .card-body{
+      
+display: flex;
+  }
   img{
     margin: 25px 25px 0 30px;
     border-style: solid;

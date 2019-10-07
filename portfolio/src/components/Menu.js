@@ -11,7 +11,7 @@ const Menu = (props) => {
         <Link to="project"><li>Projects</li></Link>
         <Link to="skills"><li>Skills</li></Link>
         <li id={'resume-pdf'}><a
-            href={"http://localhost:3000/Resume.pdf"}>Resume</a></li>
+            href={"http://localhost:3001/Resume.pdf"}>Resume</a></li>
         <Link to="contact"><li>Contact</li></Link>
         </div>
     );

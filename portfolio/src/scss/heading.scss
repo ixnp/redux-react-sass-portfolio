@@ -49,8 +49,8 @@ display:none;
    position: fixed;
     display: inline;
     color: $light;
-    font-size: 4rem;
-   
+    font-size: 8vh;
+    z-index: 5;
 
   }
 
@@ -87,6 +87,7 @@ display:none;
   
   
 }
+
 .nav{
   grid-row: 1;
   grid-column: 1;
