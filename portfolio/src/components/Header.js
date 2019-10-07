@@ -3,8 +3,7 @@ import Nav from './Nav';
 import Menu from './Menu'
 import '../scss/main.scss';
 
-import bannerImage from '../assets/headingimg.jpeg'
-
+import bannerImage from '../assets/headingimg2.jpg'
 const Header = () => {
     return (
       <div className="header-container">
