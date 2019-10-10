@@ -5,10 +5,11 @@
   
   overflow:hidden;
     &-text{
-
-        color: $light;
-        grid-column: 3/4;
-        font-size: 100%;
+        margin: 70px 0 0 0;
+        align-self: start;
+        color: $mid;
+        grid-column: 1/4;
+        font-size: 150%;
         z-index:0;
       
        h1, h2{
@@ -26,15 +27,38 @@
     }
    
 }
+
+
+@media only screen and (max-width: 1000px) {
+ .header-container{
+   &-text{
+      margin:30px 0 0 0;
+      align-self: start;
+      font-size: 100%;
+   }
+ }
+}
+
 @media only screen and (max-width: 800px) {
  .header-container{
    &-text{
-      align-content: start;
+      margin:30px 0 0 0;
+      align-self: start;
       font-size: 80%;
    }
  }
 }
 
+
+@media only screen and (max-width: 400px) {
+ .header-container{
+   &-text{
+      align-self: start;
+      font-size: 50%;
+   
+   }
+ }
+}
 .menu{
   grid-row: 1;
   grid-column: 1/-1;
