@@ -26,7 +26,7 @@ class Contact extends React.Component {
     render() {
     return (
       <div className="contact" id="contact">
-        <div className="contact-header">Contact me here</div>
+        <div className="contact-header"></div>
         <div className="contact-body">
           <form onSubmit={this.handelSubmit}>
             <input value={this.state.name} type="text" name="name" onChange={this.handelChange}></input>
