@@ -69,11 +69,11 @@
 display:none;
   &.open{
     top: 10%;
-    left: 25%;
+    left: 30%;
    position: fixed;
     display: inline;
     color: $light;
-    font-size: 3vh;
+    font-size: 5vh;
     z-index: 5;
 
   }
