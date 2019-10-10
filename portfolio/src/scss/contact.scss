@@ -29,3 +29,12 @@ display: grid;
     }
     
 }
+
+ @media only screen and (max-width: 1000px){
+ .contact{
+    &-body{
+        grid-column: 1/-1;
+    }
+ }
+
+}
