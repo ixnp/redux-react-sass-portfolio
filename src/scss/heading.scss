@@ -23,7 +23,7 @@
     img{
       width: 100%;
       overflow:hidden;
-      z-index: -3;
+      z-index: 10;
     }
    
 }
@@ -65,7 +65,7 @@
   justify-self:center;
   align-self: center;
   display:none;
-
+  z-index: 10;
   &.open{
     top: 10%;
     left: 35%;
@@ -115,6 +115,7 @@
   grid-row: 1;
   grid-column: 1;
   position: fixed;
+  z-index: 10;
 }
 
 // hamburger menu icon
