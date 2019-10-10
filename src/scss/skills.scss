@@ -277,15 +277,20 @@
  @media only screen and (max-width: 650px){
    .skills{
        &-info{
+        img {
+            margin:-23% 0% 0% -8%;
+            height: 165%;
+           
+          }
         p{
             padding:10px 30px 0 30px;
-            font-size: 3vw;
+            font-size: 4vw;
            }
        }
     
   &-graph{
       width: 300px;
-    height: 300px;
+    height: 400px;
     .heading{
             font-size: 2vh;
     }
@@ -297,7 +302,7 @@
             	content: '';
               position: absolute;
               background-color: $mid;
-              height: 12px;
+              height: 15px;
               width:13%;
               min-width: 60px;
               max-width: 140px;

@@ -64,16 +64,15 @@
   grid-column: 1/-1;
   justify-self:center;
   align-self: center;
-  
+  display:none;
 
-display:none;
   &.open{
     top: 10%;
-    left: 30%;
+    left: 35%;
    position: fixed;
     display: inline;
     color: $light;
-    font-size: 5vh;
+    font-size: 10vh;
     z-index: 5;
 
   }
@@ -182,3 +181,24 @@ display:none;
       
   }
   
+  @media only screen and (max-width: 650px){
+    .menu{
+      grid-row: 1;
+      grid-column: 1/-1;
+      justify-self:center;
+      align-self: center;
+      display:none;
+      
+      &.open{
+        top: 10%;
+        left: 35%;
+       position: fixed;
+        display: inline;
+        color: $light;
+        font-size: 5vh;
+        z-index: 5;
+    
+      }
+    }
+
+  }
