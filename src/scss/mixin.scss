@@ -1,0 +1,18 @@
+ @mixin graph($row,$col) {
+            grid-column: 2 / span $col;
+            grid-row:$row;
+            background:$highlight;
+            & span{
+              position: absolute;
+              z-index: 5;
+              text-transform: uppercase;
+              padding:3px 0 0 10px;
+
+            }
+        }
+@mixin form($marg,$padding){
+    color:$shadow;
+    text-transform: uppercase;
+    margin: $marg;
+    padding:$padding;
+}

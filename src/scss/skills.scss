@@ -1,0 +1,273 @@
+.skills{
+     &-inner{
+            display: flex;
+            flex-direction: column-reverse; 
+            
+        }
+    &-info{
+      display: flex;
+        padding:20px 0 0 40px;
+
+        color:$mid;
+       font-family: $font-text;
+      
+        .circle{ 
+
+        padding-top: 30px;
+        margin: auto;
+        width: 20vw;
+        min-width: 300px;
+        max-width: 430px;
+        height: 34vh;
+        min-height: 300px;
+        max-height:430px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 50%;
+        }
+        img {
+         
+          display: inline;
+          margin:-12% 0% 0% -6%;
+          height: 145%;
+          width: auto;
+        }
+       .skills-info-text{
+         align-self: center;
+         justify-self: center;
+       }
+        h3{
+          padding:45px 60px 0 60px;
+          color:$shadow;
+        }
+        p{
+         padding:10px 60px 0 60px;
+        }
+    }
+
+    &-graph{
+    font-family: $font-text;
+    
+    width: 800px;
+    height: 800px;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(26,1fr); 
+    .heading{
+
+      grid-column: 2/-1;
+      grid-row: 2;
+      color:$shadow;
+      font-size: 4vh;
+    }
+    li{
+     
+        list-style-type: none;
+        color:$highlight;
+        align-self:center;
+        
+        animation-duration: 3s;
+        height:100%;
+        
+          &:before{
+
+            	content: '';
+              position: absolute;
+              background-color: $mid;
+              height: 30px;
+              width:13%;
+              min-width: 85px;
+              max-width: 140px;
+              z-index: 4;
+          }        
+        &:nth-child(2){
+           @include graph(2,12);
+        
+        
+        }
+       
+        &:nth-child(3){
+            @include graph(4,12);
+        }
+        &:nth-child(4){
+            @include graph(6,11);
+        }
+        &:nth-child(5){
+            @include graph(8,10);
+        }
+        &:nth-child(6){
+            @include graph(10,13);
+
+        }
+        &:nth-child(7){
+            @include graph(12,8);
+
+        }
+        &:nth-child(8){
+            @include graph(14,7);
+
+        }
+
+        &:nth-child(9){
+            @include graph(16,10);
+
+        }
+        &:nth-child(10){
+            @include graph(18,10);
+
+        }
+        &:nth-child(11){
+            @include graph(20,12);
+
+        }
+        &:nth-child(12){
+            @include graph(22,11);
+
+        }
+        &:nth-child(13){
+            @include graph(24,11);
+
+        }
+
+    }
+    }
+    
+    @media only screen and  (max-width: 1200px){
+        &-inner{
+            display: flex;
+            flex-direction: column-reverse; 
+            
+        }
+       
+        &-info{
+            display: grid;
+            grid-template-columns: auto auto;
+            padding:20px 0 0 0;
+            color:$mid;
+           font-family: $font-text;
+           width: 85%;
+         
+            .circle{ 
+              
+            padding-top: 30px;
+            margin: 80px 0 0 20px;
+        
+            width: 20vw;
+            min-width: 200px;
+            max-width: 330px;
+            height: 24vh;
+            min-height: 200px;
+            max-height:330px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 50%;
+            }
+            img {
+             
+              display: inline;
+              margin:-20% 0% 0% 0%;
+              height: 165%;
+              width: auto;
+            }
+         
+          
+            h3{
+              padding:45px 20px 0 10%;
+              color:$shadow;
+            }
+            p{
+                
+                width: auto;
+               font-size: 1w;
+             padding:10px 25px 0 10%;
+             
+            }
+        }  
+        &-graph{
+            width: 600px;
+        } 
+        @media only screen and (max-width: 900px){
+            &-info{
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+            .circle{ 
+                margin: auto;
+                
+            }
+            img{
+                        margin:-19% 0% 0% -6%;
+
+            }
+            
+            }
+        }  
+    }
+  
+ 
+}
+
+.moving{
+    animation-name: moving;
+}
+@keyframes moving {
+  0%{width: 0%}
+  100%{width: 100%;}
+}
+
+//mobile
+
+
+ @media only screen and (max-width: 700px){
+   .skills{
+     li{
+          &:nth-child(2){
+           @include graph(2,10);
+        
+        }
+       
+        &:nth-child(3){
+            @include graph(4,10);
+        }
+        &:nth-child(4){
+            @include graph(6,9);
+        }
+        &:nth-child(5){
+            @include graph(8,8);
+        }
+        &:nth-child(6){
+            @include graph(10,10);
+
+        }
+        &:nth-child(7){
+            @include graph(12,6);
+
+        }
+        &:nth-child(8){
+            @include graph(14,5);
+
+        }
+
+        &:nth-child(9){
+            @include graph(16,8);
+
+        }
+        &:nth-child(10){
+            @include graph(18,8);
+
+        }
+        &:nth-child(11){
+            @include graph(20,10);
+
+        }
+        &:nth-child(12){
+            @include graph(22,11);
+
+        }
+        &:nth-child(13){
+            @include graph(24,9);
+
+        }
+     }
+   }
+}
