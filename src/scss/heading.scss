@@ -54,7 +54,7 @@
  .header-container{
    &-text{
       align-self: start;
-      font-size: 50%;
+      font-size: 40%;
    
    }
  }
@@ -68,12 +68,12 @@
 
 display:none;
   &.open{
-    top: 20%;
-    left: 35%;
+    top: 10%;
+    left: 25%;
    position: fixed;
     display: inline;
     color: $light;
-    font-size: 8vh;
+    font-size: 3vh;
     z-index: 5;
 
   }
