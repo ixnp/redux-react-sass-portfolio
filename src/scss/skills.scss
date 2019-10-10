@@ -271,3 +271,81 @@
      }
    }
 }
+
+
+
+ @media only screen and (max-width: 400px){
+   .skills{
+  &-graph{
+      width: 300px;
+    height: 300px;
+    .heading{
+            font-size: 2vh;
+    }
+    
+     li{
+            
+          &:before{
+
+            	content: '';
+              position: absolute;
+              background-color: $mid;
+              height: 12px;
+              width:13%;
+              min-width: 60px;
+              max-width: 140px;
+              z-index: 4;
+          }  
+       font-size: 2vw;
+          &:nth-child(2){
+           @include graph(2,10);
+        
+        }
+       
+        &:nth-child(3){
+            @include graph(4,10);
+        }
+        &:nth-child(4){
+            @include graph(6,9);
+        }
+        &:nth-child(5){
+            @include graph(8,8);
+        }
+        &:nth-child(6){
+            @include graph(10,10);
+
+        }
+        &:nth-child(7){
+            @include graph(12,6);
+
+        }
+        &:nth-child(8){
+            @include graph(14,5);
+
+        }
+
+        &:nth-child(9){
+            @include graph(16,8);
+
+        }
+        &:nth-child(10){
+            @include graph(18,8);
+
+        }
+        &:nth-child(11){
+            @include graph(20,10);
+
+        }
+        &:nth-child(12){
+            @include graph(22,11);
+
+        }
+        &:nth-child(13){
+            @include graph(24,9);
+
+        }
+     }
+   }
+  }
+}
+
