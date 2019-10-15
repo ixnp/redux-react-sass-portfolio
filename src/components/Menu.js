@@ -11,7 +11,8 @@ const Menu = (props) => {
         <Link to="project"><li>Projects</li></Link>
         <Link to="skills"><li>Skills</li></Link>
         <li id={'resume-pdf'}><a
-            href={"http://localhost:3001/Resume.pdf"}>Resume</a></li>
+          href={"https://drive.google.com/file/d/1rXeXzZrkEoQSQnwOhtzy-n8qAVE6_bS-/view?usp=sharing"}>Resume</a></li>
+            
         <Link to="contact"><li>Contact</li></Link>
         </div>
     );
