@@ -22,24 +22,9 @@ const projectArr = [
     role: "UX/UI Designer and Developer",
     url: "",
     description:
-      "Web portfolio built for to Client specifications. Dynamic Mobile and Web portfolio built for the VR technology Company Digital Peronmones.",
+      "Developed with a team of instructors this application was created for a workshop demonstrating a Full Stack application using React /Redux for the front end, a Rails/PostgreSQL API and unit tests The workshop included lectures introducing the basics of these technologies and short exercise for students to add features to the product application.",
     img: {
       big:"https://i.imgur.com/XcEsCbL.png",
-      med: "",
-      small: ""
-    },
-    selected: false
-  },
-  {
-    name: "test",
-    technologies: "Jquery SCSS",
-    role: "UX/UI Designer and Developer",
-    url: "",
-    description:
-      "Web portfolio built for to Client specifications. Dynamic Mobile and Web portfolio built for the VR technology Company Digital Peronmones.",
-    img: {
-      big:
-        "https://image.shutterstock.com/image-vector/default-ui-image-placeholder-wireframes-600w-1037719192.jpg",
       med: "",
       small: ""
     },
