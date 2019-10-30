@@ -1,5 +1,9 @@
 .contact{
-display: grid;
+display: flex;
+flex-direction: column;
+text-align: center;
+
+
  grid-template-columns: repeat(5, 1fr);
     &-header{
         grid-column: 1/2;
@@ -44,4 +48,10 @@ display: grid;
 
  }
 
+}
+
+h2, h3{
+  margin:auto;
+  padding:10px;
+  color:$light;
 }

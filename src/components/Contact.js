@@ -1,7 +1,9 @@
 import React from 'react';
 import '../scss/main.scss';
 import {connect} from 'react-redux';
-import {formAction} from '../actions'
+import {formAction} from '../actions';
+
+
 
 //TODO SEND EMAIL
 class Contact extends React.Component {
@@ -24,9 +26,12 @@ class Contact extends React.Component {
     this.props.formAction(this.state)
   }
     render() {
+      let REFRESH_TOKEN = process.env.REACT_APP_REFRESH_TOKEN
+      let ACCESS_TOKEN = process.env.REACT_APP_ACCESSTOKEN
+
     return (
       <div className="contact" id="contact">
-        <div className="contact-header"></div>
+        {/* <div className="contact-header"></div>
         <div className="contact-body">
           <form onSubmit={this.handelSubmit}>
             <input value={this.state.name} type="text" name="name" onChange={this.handelChange}></input>
@@ -35,7 +40,12 @@ class Contact extends React.Component {
             <textarea value={this.state.message}name="message" onChange={this.handelChange}></textarea>
             <button type="submit" >Submit</button>
           </form>
-        </div>
+        </div> */}
+        <h2>Contact</h2>
+        <h3>425-231-7962</h3>
+        <h3>enprocopios@gmail.com</h3>
+        <h3>linkedin.com/in/ix-procopios/</h3>
+        <h3> github.com/ixnp</h3>
       </div>
     );
     }
